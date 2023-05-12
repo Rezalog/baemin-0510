@@ -1,3 +1,38 @@
+
+==============================================================================================================
+
+1. Model
+![1](https://github.com/Rezalog/baemin-0510/assets/70252834/567a95d9-69f0-4d73-8565-fdf6af09c995)
+
+2. Saga
+
+![cook](https://github.com/Rezalog/baemin-0510/assets/70252834/c6b8370a-3b08-409d-8bc0-a3614b08a549)
+![delivery](https://github.com/Rezalog/baemin-0510/assets/70252834/6f145ea3-0afd-4c79-be3a-eb12984f421d)
+![payment](https://github.com/Rezalog/baemin-0510/assets/70252834/d37c9324-87f2-4b08-ac3c-8b194a4f2d60)
+
+3. CQRS
+![1](https://github.com/Rezalog/baemin-0510/assets/70252834/20dcfac2-6807-478c-9e1b-7b2ef2dc6857)
+![2](https://github.com/Rezalog/baemin-0510/assets/70252834/45e3688c-ae34-44d7-bf99-f8ac50e77829)
+![3](https://github.com/Rezalog/baemin-0510/assets/70252834/9be7fb8c-e26b-49cd-a9b1-18936651a6d1)
+![4](https://github.com/Rezalog/baemin-0510/assets/70252834/b486b503-0039-41fe-aa8e-7d8e45840812)
+![5](https://github.com/Rezalog/baemin-0510/assets/70252834/1c469003-4865-494b-bf83-9514874cbe18)
+
+
+4. compensation and correlation
+
+![1](https://github.com/Rezalog/baemin-0510/assets/70252834/6742f6a1-b1d0-4f1e-9401-d468b26c4200)
+![2](https://github.com/Rezalog/baemin-0510/assets/70252834/5b008b16-6d97-4bba-92e9-2e346b87a7ac)
+![3](https://github.com/Rezalog/baemin-0510/assets/70252834/f0b38a92-6967-449c-b801-7b6d2c113c8d)
+
+
+
+========================================================================================================================
+
+
+
+
+
+
 # 
 
 ## Model
