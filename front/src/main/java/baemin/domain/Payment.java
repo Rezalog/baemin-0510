@@ -41,26 +41,22 @@ public class Payment {
     }
 
     public static void pay(OrderPlaced orderPlaced) {
-        /** Example 1:  new item 
-        Payment payment = new Payment();
-        repository().save(payment);
-
-        Paid paid = new Paid(payment);
-        paid.publishAfterCommit();
-        */
-
-        /** Example 2:  finding and process
         
-        repository().findById(orderPlaced.get???()).ifPresent(payment->{
+        repository().findById(orderPlaced.getId()).ifPresent(payment->{
             
-            payment // do something
+            payment.setAddress(orderPlaced.getAddress());
+            payment.setFoodId(orderPlaced.getFoodId());
+            payment.setOrderId(String.valueOf(orderPlaced.getId()));
+            payment.setOptions(orderPlaced.getOptions());
+            payment.setStatus("paid");
+            
             repository().save(payment);
 
             Paid paid = new Paid(payment);
             paid.publishAfterCommit();
 
          });
-        */
+       
 
     }
 }

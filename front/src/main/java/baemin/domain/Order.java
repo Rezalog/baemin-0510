@@ -1,8 +1,7 @@
 package baemin.domain;
 
 import baemin.FrontApplication;
-import baemin.domain.OrderCancelled;
-import baemin.domain.OrderPlaced;
+import baemin.domain.*;
 import java.util.Date;
 import java.util.List;
 import javax.persistence.*;
@@ -26,11 +25,17 @@ public class Order {
 
     private String address;
 
+    private String status;
+
     @PostPersist
     public void onPostPersist() {
         OrderPlaced orderPlaced = new OrderPlaced(this);
         orderPlaced.publishAfterCommit();
 
+    }
+
+    @PreRemove
+    public void onPreRemove() {
         OrderCancelled orderCancelled = new OrderCancelled(this);
         orderCancelled.publishAfterCommit();
     }
@@ -41,4 +46,5 @@ public class Order {
         );
         return orderRepository;
     }
+
 }

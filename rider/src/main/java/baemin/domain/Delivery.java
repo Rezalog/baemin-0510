@@ -44,22 +44,16 @@ public class Delivery {
     }
 
     public static void updateStatus(CookFinished cookFinished) {
-        /** Example 1:  new item 
-        Delivery delivery = new Delivery();
-        repository().save(delivery);
+       
 
-        */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(cookFinished.get???()).ifPresent(delivery->{
+        repository().findById(Long.valueOf(cookFinished.getOrderId())).ifPresent(delivery->{
             
-            delivery // do something
+            delivery.setStatus("cookFinished");
             repository().save(delivery);
 
 
          });
-        */
+        
 
     }
 }

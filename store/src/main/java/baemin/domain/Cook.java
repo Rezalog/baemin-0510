@@ -56,42 +56,31 @@ public class Cook {
     }
 
     public static void updateStatus(Paid paid) {
-        /** Example 1:  new item 
-        Cook cook = new Cook();
-        repository().save(cook);
-
-        */
-
-        /** Example 2:  finding and process
         
-        repository().findById(paid.get???()).ifPresent(cook->{
+        
+        repository().findById(Long.valueOf(paid.getOrderId())).ifPresent(cook->{
             
-            cook // do something
+            cook.setOrderId(paid.getOrderId());
+            cook.setOptions(paid.getOptions());
+            cook.setStatus("cooked");
+
             repository().save(cook);
 
-
          });
-        */
+        
 
     }
 
     public static void updateStatus(OrderCancelled orderCancelled) {
-        /** Example 1:  new item 
-        Cook cook = new Cook();
-        repository().save(cook);
-
-        */
-
-        /** Example 2:  finding and process
         
-        repository().findById(orderCancelled.get???()).ifPresent(cook->{
+        repository().findById(orderCancelled.getId()).ifPresent(cook->{
             
-            cook // do something
+            cook.setStatus("cancelled");
             repository().save(cook);
 
-
+            
          });
-        */
+       
 
     }
 }
